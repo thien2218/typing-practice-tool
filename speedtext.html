@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpeedText</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylish.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <header class="head">
+        <h1>SpeedText</h1>
+    </header>
+<div class="container">
+    <div class="instruction position active">
+        <h3>Instruction</h3>
+            <p>Play the game by typing in the given word in an amount of time, click 'start' to play the game</p>
+        <input type="submit" name="start" id="start-game" value="Start" class="button">
+    </div>    
+    <div class="word position inactive">
+        <p class="placement">Type the given word within <span id="total-time"><i><b></b></i></span> seconds</p>
+        <h1 class="givenword" id="given-word">hello</h1>
+        <p id="announce" class="announce"></p>
+        <div class="time-score">Time: <span id="time">0</span></div>
+        <div class="time-score">Score: <span id="score">0</span></div>
+        <input type="text" name="text" id="word-input" placeholder="Type the given word..." class="text-form">
+    </div>
+    <div class="endgame inactive position">
+        <div class="gg" id="message">Game Over!</div>
+        <div class="gg2">You scored: <span id="total-score">0</span> point(s)</div>
+        <input type="submit" class="button2" name="restart" value="Play again" id="play-again">
+    </div>
+</div>
+<script src="scriptext.js"></script>
+</body>
+</html>

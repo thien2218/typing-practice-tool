@@ -1,0 +1,148 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #3d5c5c
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.button{
+    padding: 7px 15px;
+    outline: none;
+    background-color: #3d5c5c;
+    border: none;
+    color: #fff;
+    transition-duration: 0.5s;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover{
+    pointer-events: all;
+    background-color: #00cc66
+}
+
+.head{
+    position: fixed;
+    width: 100%;
+    display:block;
+    text-align: center;
+    background-color: #527a7a;
+    font-size: 20px;
+}
+
+.position{
+    left: 50%;
+    top: 40%;
+    position: fixed;
+}
+
+.inactive{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 0);
+    transition: all 0.5s ease;
+}
+
+.active{
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease 0.4s;
+}
+
+.instruction{
+    border-radius: 15px;
+    background-color: #527a7a;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.givenword{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    text-shadow: 2px 15px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.text-form{
+    padding: 15px;
+    border-radius: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    text-align: center;
+    box-shadow: 2px 10px 40px rgba(0, 0, 0, 0.5);
+    background-color: #527a7a;
+    transition: all 0.2s ease;
+}
+
+.text-form:focus{
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.time-score{
+    font-size: 21px;
+    padding-bottom: 20px;
+}
+
+.gg{
+    font-size: 60px;
+    padding-bottom: 60px;
+    padding-top: 30px
+}
+
+.gg2{
+    font-size: 80px;
+    padding-bottom: 50px
+}
+
+.placement{
+    padding-top: 100px;
+    font-size: 18px;
+}
+
+::placeholder{
+    font-size: 18px;
+    color: #fff
+}
+
+.button2{
+    padding: 15px 15px;
+    outline: none;
+    background-color: #527a7a;
+    border: none;
+    color: #fff;
+    transition-duration: 500ms;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px
+}
+
+.button2:hover{
+    pointer-events: all;
+    background-color: #00cc66
+}
+
+.endgame{
+    padding-top: 150px;
+    position: fixed;
+}
+
+.word{
+    position: fixed;
+    padding-top: 70px;
+}
+
+.announce{
+    margin: 0 0 15px 0;
+    font-size: 1.25em;
+}
